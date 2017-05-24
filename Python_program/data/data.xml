@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DBS>
+    <CurrentUser>POINTET</CurrentUser>
+    <ENV name="uat" />
+    <User title="DAVISK2">
+        <UserType>Internal User</UserType>
+        <UserName>DAVISK2</UserName>
+        <RegionCode>11</RegionCode>
+        <DivisionCode></DivisionCode>
+        <DealerCode>3225</DealerCode>
+    </User>
+        <User title="POINTET">
+        <UserType>Internal User</UserType>
+        <UserName>POINTET</UserName>
+        <RegionCode>11</RegionCode>
+        <DivisionCode></DivisionCode>
+        <DealerCode>3225</DealerCode>
+    </User>
+        <User title="DDEFID57">
+        <UserType>Dealer User</UserType>
+        <UserName>DDEFID57</UserName>
+        <RegionCode>72</RegionCode>
+        <DivisionCode>Infiniti</DivisionCode>
+        <DealerCode>70214</DealerCode>
+    </User>
+</DBS>
