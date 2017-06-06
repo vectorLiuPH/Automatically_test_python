@@ -1,8 +1,6 @@
-import random
 import time
 
 from selenium.webdriver import ActionChains
-from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.wait import WebDriverWait
@@ -50,18 +48,18 @@ class BaseObject():
                 break
 
     def table_random_tr(self, *loc):
-        tr1=0
+        tr1 = 0
         table = self.find_element(*loc)
         tr_list = table.find_elements_by_tag_name('tr')
-        label_disalbe_list=table.find_elements_by_class_name('disablecheckbox')
+        label_disalbe_list = table.find_elements_by_class_name('disablecheckbox')
         for tr in tr_list:
-            label=tr.find_element_by_tag_name('label')
+            label = tr.find_element_by_tag_name('label')
             if label not in label_disalbe_list:
                 tr1 = tr
                 break
-            # td = tr.find_element_by_tag_name('td')
-            # label = td.find_element_by_tag_name('label')
-            # if label.value_of_css_property(label) != 'disablecheckbox':
+                # td = tr.find_element_by_tag_name('td')
+                # label = td.find_element_by_tag_name('label')
+                # if label.value_of_css_property(label) != 'disablecheckbox':
 
         return tr1
 
@@ -74,12 +72,12 @@ class BaseObject():
         WebDriverWait(self.driver, 30, 0.5).until(expected_conditions.presence_of_element_located(loc))
 
     def snap_successful_shot(self, child_dir, pic_name):
-        base_dir = 'C:\CODE\python\Python_program\TestResult\successfully\\'
+        base_dir = 'C:\\Users\liupengh\Desktop\Personal\code\DBS_AUTO\Python_program\TestResult\successfully\\'
         path = base_dir + child_dir + '\\' + pic_name + '.png'
         self.driver.get_screenshot_as_file(path)
 
     def snap_fail_shot(self, child_dir, pic_name):
-        base_dir = 'C:\CODE\python\Python_program\TestResult\\fail\\'
+        base_dir = 'C:\\Users\liupengh\Desktop\Personal\code\DBS_AUTO\Python_program\TestResult\\fail\\'
         path = base_dir + child_dir + '\\' + pic_name + '.png'
         self.driver.get_screenshot_as_file(path)
 

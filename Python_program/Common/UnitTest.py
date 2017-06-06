@@ -1,5 +1,4 @@
 import unittest
-import time
 
 from Python_program.Common.Browser import browser
 from Python_program.Common.DataDriver import DataDriver

@@ -1,8 +1,6 @@
-import HTMLTestRunner
 import unittest
 
 from Python_program.Cases.test_InventorySearch import test_InventorySearch
-from Python_program.Cases.test_Login import login_test
 from Python_program.Common.DataDriver import DataDriver
 
 if __name__ == "__main__":

@@ -1,9 +1,6 @@
-from xml.dom.minidom import parse
 import xml.dom.minidom
 
-from Python_program.Common import Browser
-
-xml_loc = 'C:\CODE\python\Python_program\data\data.xml'
+xml_loc = 'C:\\Users\liupengh\Desktop\Personal\code\DBS_AUTO\Python_program\data\data.xml'
 
 
 class DataDriver:
