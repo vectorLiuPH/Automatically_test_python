@@ -13,8 +13,9 @@ if __name__ == "__main__":
     if DataDriver.UserType=='Dealer User':
         suite.addTest(test_InventorySearch('test_notes'))
     # suite.addTest(test_InventorySearch('test_vehicle_detail'))
+    suite.addTest(test_InventorySearch('test_print_function'))
     suite.addTest(test_InventorySearch('test_options'))
-    # suite.addTest(test_InventorySearch('test_print_function'))
+
 
 
 

@@ -8,13 +8,14 @@ class InventorySearch(BaseObject):
     add_notes_loc = (By.LINK_TEXT, "Add Notes")
     edit_notes_loc = (By.LINK_TEXT, 'Edit Notes')
     close_note_window_loc = (By.XPATH, "//*[@id='ancn_title']/a")
-    action_menu_loc = (By.ID, 'f1:vehicleTable:0:j_id454:menuIcon')
+    action_menu_loc = (By.XPATH,
+                       'html/body/div[2]/div[6]/form/div[2]/div[1]/div[4]/span/div/div[2]/div[2]/div[2]/div/div[2]/table/tbody/tr[1]/td[1]/div/div')
     vehicle_detail = (By.LINK_TEXT, "View Vehicle Detail")
     colors_table = 'f1:colorCheckBoxList'
     options_table_xpath = "//*[@id='f1:divoptions']/table"
     colors_option_loc = (By.ID, colors_table)
     options_table_loc = (By.XPATH, options_table_xpath)
-    print_button_loc = (By.ID, "j_id253:comPrintIcon")
+    print_button_loc = (By.XPATH, "html/body/div[2]/div[5]/div[2]/span/form/div/a")
     print_close_button_loc = (By.ID, "close_button_top")
     page_flag_loc = (By.CLASS_NAME, "inventorySearchDiv")
     vehicle_detail_flag_loc = (By.XPATH, "//*[@id='f2']/table[1]")
